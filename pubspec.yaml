@@ -1,0 +1,44 @@
+name: crypto_tracker
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  http: ^1.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  fonts:
+    - family: San Fransisco
+      fonts:
+        - asset: assets/fonts/SFPRODISPLAYBLACKITALIC.OTF
+        - asset: assets/fonts/SFPRODISPLAYBLACKITALIC.OTF
+        - asset: assets/fonts/SFPRODISPLAYBOLD.OTF
+        - asset: assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF
+        - asset: assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF
+        - asset: assets/fonts/SFPRODISPLAYMEDIUM.OTF
+        - asset: assets/fonts/SFPRODISPLAYREGULAR.OTF
+        - asset: assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF
+        - asset: assets/fonts/SFPRODISPLAYTHINITALIC.OTF
+        - asset: assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF

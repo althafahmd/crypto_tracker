@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+
+import 'utilities/app_colors.dart';
+import 'screens/home_screen.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark().copyWith(
+        primaryColor: AppColors.primaryBlue,
+        scaffoldBackgroundColor: AppColors.primaryBG,
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
