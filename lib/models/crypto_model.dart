@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
 const List<String> currencyList = [
@@ -29,7 +30,7 @@ const List<String> currencyList = [
 const List<String> cryptoList = ['BTC', 'ETH', 'LTC'];
 
 class CryptoModel {
-  const CryptoModel();
+  final apiKey = dotenv.env['API_KEY'].toString();
 
   Future getCryptoRate(String crypto, String currency) async {
     final url = Uri.parse(
@@ -38,10 +39,7 @@ class CryptoModel {
 
     http.Response response = await http.get(
       url,
-      headers: {
-        'x-api-key': 'e4f129b6fe8f1674ce6b436f3c8a9c703904e409',
-        'Content-Type': 'application/json',
-      },
+      headers: {'x-api-key': apiKey, 'Content-Type': 'application/json'},
     );
 
     if (response.statusCode == 200) {
